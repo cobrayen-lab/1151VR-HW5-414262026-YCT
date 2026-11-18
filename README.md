@@ -1,5 +1,5 @@
 ### GitHub 連結 : https://github.com/cobrayen-lab/1151VR-HW5-414262026-YCT
-### YouTube 連結 : [https://youtube.com/shorts/XmCKdz5FcEY?feature=share](https://youtu.be/YCyxvmIKEUE)
+### YouTube 連結 : https://youtu.be/YCyxvmIKEUE
 ### 製作流程 :
 1. ***建立 3D 場景***
     - 建立 Unity 3D 專案。
