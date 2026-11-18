@@ -6,6 +6,7 @@ public class PokeBallCollision : MonoBehaviour
     public GameObject captureEffect;
 
     private bool captured = false;
+    public AudioClip captureSound;
 
     void OnTriggerEnter(Collider other)
     {
@@ -33,6 +34,26 @@ public class PokeBallCollision : MonoBehaviour
                 captureEffect,
                 effectPosition,
                 Quaternion.identity
+            );
+            GameObject soundObject =
+                new GameObject("CaptureSound");
+
+            AudioSource audioSource =
+                soundObject.AddComponent<AudioSource>();
+
+            // 設定為 2D，不受距離影響
+            audioSource.spatialBlend = 0f;
+
+            // 音量設為最大
+            audioSource.volume = 1f;
+
+            audioSource.clip = captureSound;
+            audioSource.Play();
+
+            // 音效播完後刪除物件
+            Destroy(
+                soundObject,
+                captureSound.length + 0.1f
             );
 
             effect.SetActive(true);

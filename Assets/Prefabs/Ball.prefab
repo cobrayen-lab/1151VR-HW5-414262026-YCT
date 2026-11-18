@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   captureEffect: {fileID: 5223064713040777168, guid: a693991161f0eda4796584522bb42aa5, type: 3}
+  captureSound: {fileID: 8300000, guid: 71409da55b6b2ba4496f2deeec57e5a3, type: 3}
